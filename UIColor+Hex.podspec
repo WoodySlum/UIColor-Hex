@@ -9,6 +9,7 @@ Pod::Spec.new do |s|
                   :tag => '1.0.0'}
   s.requires_arc  = true
   s.social_media_url = 'https://twitter.com/inferis'
+  s.watchos.deployment_target = '2.0'
 
   s.subspec 'UIColor' do |ios|
     ios.source_files  = ['UIColor/*.{h,m}']
