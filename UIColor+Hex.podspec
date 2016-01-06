@@ -19,4 +19,9 @@ Pod::Spec.new do |s|
     osx.source_files  = ['NSColor/*.{h,m}']
     osx.platform  = :osx
   end
+
+  s.subspec 'UIColor' do |watchos|
+    watchos.source_files  = ['UIColor/*.{h,m}']
+    watchos.platform  = :watchos, 2.0
+  end
 end
